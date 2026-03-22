@@ -176,7 +176,7 @@ const CounselorDashboardPage = () => {
                     <AlertTriangle className="h-5 w-5 text-warning" />
                     <div>
                       <p className="font-heading font-bold text-sm">{f.profiles?.full_name || f.full_name}</p>
-                      <p className="text-xs text-muted-foreground">{f.profiles?.classes?.grade}׳{f.profiles?.classes?.class_number} | {f.reason || "זוהה ע"י AI"}</p>
+                      <p className="text-xs text-muted-foreground">{f.profiles?.classes?.grade}'{f.profiles?.classes?.class_number} | {f.reason || "זוהה ע״י AI"}</p>
                     </div>
                   </div>
                   <Button size="sm" variant="outline" className="text-xs font-heading" onClick={() => openCase(f.profiles?.id || f.id, f.profiles?.full_name || f.full_name)}>
