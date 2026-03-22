@@ -16,7 +16,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { format, differenceInDays, differenceInHours, differenceInMinutes } from "date-fns";
 import { he } from "date-fns/locale";
-import AvatarPreview from "@/components/avatar/AvatarPreview";
+
 
 const StudentDashboard = () => {
   const { profile } = useOutletContext<{ profile: UserProfile }>();
@@ -126,7 +126,7 @@ const StudentDashboard = () => {
       <motion.div variants={item} className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="w-14 h-14 rounded-2xl overflow-hidden bg-muted border-2 border-primary/20">
-            <AvatarPreview userId={profile.id} size="md" />
+            🧑
           </div>
           <div>
             <h1 className="text-xl font-heading font-bold">שלום, {profile.full_name?.split(" ")[0]}! 👋</h1>
