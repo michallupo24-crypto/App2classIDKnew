@@ -15,7 +15,7 @@ import {
 import type { UserProfile } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
-import AvatarPreview from "@/components/avatar/AvatarPreview";
+
 
 const CounselorDashboardPage = () => {
   const { profile } = useOutletContext<{ profile: UserProfile }>();
