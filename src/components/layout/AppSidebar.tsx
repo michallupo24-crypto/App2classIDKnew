@@ -10,7 +10,7 @@ import {
   Bell, Layers, Target, TreePine, Building, Award
 } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
-import AvatarPreview from "@/components/avatar/AvatarPreview";
+
 
 const AppSidebar = () => {
   const { profile, logout } = useAuth();
@@ -111,7 +111,7 @@ const AppSidebar = () => {
           {/* Profile */}
           <div className="p-4 flex items-center gap-3 border-b border-border/50 mb-2">
             <div className="w-10 h-10 rounded-xl overflow-hidden bg-muted border border-primary/20 cursor-pointer" onClick={() => navigate("/dashboard/avatar-edit")}>
-              <AvatarPreview userId={profile?.id || ""} size="sm" />
+              👤
             </div>
             <div className="overflow-hidden">
               <p className="font-heading font-bold text-sm truncate">{profile?.full_name}</p>
