@@ -13,7 +13,7 @@ import type { UserProfile } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { format, differenceInDays } from "date-fns";
 import { he } from "date-fns/locale";
-import AvatarPreview from "@/components/avatar/AvatarPreview";
+
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line } from "recharts";
 
 const ParentDashboardPage = () => {
@@ -126,7 +126,7 @@ const ParentDashboardPage = () => {
       {/* Child info */}
       <motion.div variants={item} className="flex items-center gap-4">
         <div className="w-14 h-14 rounded-2xl overflow-hidden bg-muted border-2 border-primary/20">
-          <AvatarPreview userId={child.id} size="md" />
+          🧒
         </div>
         <div>
           <h1 className="text-xl font-heading font-bold">{child.full_name}</h1>
